@@ -1,0 +1,104 @@
+.candy-sell-modal {
+  font-size: 16px;
+  line-height: 24px;
+}
+.candy-sell-modal-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.candy-sell-modal-content {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.candy-sell-modal-img {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  text-align: center;
+}
+.candy-sell-modal-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.candy-sell-modal-symbol {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.candy-sell-modal-nft-name {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.candy-sell-modal-listed {
+  align-self: flex-start;
+  font-size: 22px;
+  line-height: 32px;
+}
+.candy-sell-modal-hr {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.candy-sell-modal-button {
+  width: 100%;
+  padding: 8px 100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.candy-sell-modal-button:disabled {
+  background: #bdbdbd;
+}
+.candy-sell-modal-fees {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.candy-sell-modal-fees-left {
+  text-align: left;
+}
+.candy-sell-modal-fees-right {
+  text-align: right;
+}
+.candy-sell-modal-input-number {
+  width: 100%;
+  height: 40px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid #bdbdbd;
+  margin-bottom: 20px;
+}
+.candy-sell-modal-input-number input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  /* Firefox */
+}
+.candy-sell-modal-input-number input::-webkit-outer-spin-button,
+.candy-sell-modal-input-number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.candy-sell-modal-input-number input[type='number'] {
+  -moz-appearance: textfield;
+}
+.candy-sell-modal-loading {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+/*# sourceMappingURL=style.css.map */
