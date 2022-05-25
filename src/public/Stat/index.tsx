@@ -4,7 +4,7 @@ import { CandyShop } from '@liqnft/candy-shop-sdk';
 import { useValidateStatus } from '../../hooks/useValidateStatus';
 import { StatActionsStatus } from '../../constant';
 
-import './index.less';
+import './index.css';
 import { useUpdateCandyShopContext } from '../../public/Context';
 
 export interface StatProps {

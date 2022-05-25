@@ -39,7 +39,7 @@ export const LiqImage: React.FC<LiqImageProps> = ({ src, alt, fit = 'cover', sty
   }, []);
 
   return (
-    <div style={combinedStyle} ref={ref}>
+    <div className="nft-div" style={combinedStyle} ref={ref}>
       <div style={loaderDivStyles}></div>
       {src ? (
         <img

@@ -17,7 +17,7 @@ import { CandyShop as CandyShopResponse } from '@liqnft/candy-shop-types';
 import { TIMEOUT_EXTRA_LOADING } from '../../constant';
 import { useUnmountTimeout } from '../../hooks/useUnmountTimeout';
 
-import './style.less';
+import './style.css';
 
 export interface SellModalProps {
   onCancel: () => void;

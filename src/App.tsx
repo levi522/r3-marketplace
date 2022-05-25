@@ -115,12 +115,13 @@ const App = () => {
                       element={(
                         <>
                           <TopNav />
-                          <Home
+                          {/*<Home
                             candyMachineId={candyMachineId}
                             connection={connection}
                             txTimeout={txTimeout}
                             rpcHost={rpcHost}
-                          />
+                          />*/}
+                            <Marketplace />
                         </>
                       )}
                     />

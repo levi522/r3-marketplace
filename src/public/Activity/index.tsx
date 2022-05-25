@@ -14,7 +14,7 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
 
-import './style.less';
+import './style.css';
 
 interface ActivityProps {
   candyShop: CandyShop;

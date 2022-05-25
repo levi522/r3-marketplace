@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 import { Order as OrderSchema } from '@liqnft/candy-shop-types';
 import { getExchangeInfo } from '../../utils/getExchangeInfo';
 import { getPrice } from '../../utils/getPrice';
-import './index.less';
+import './index.css';
 
 export interface OrderProps {
   order: OrderSchema;
@@ -50,21 +50,23 @@ export const Order: React.FC<OrderProps> = ({ order, wallet, walletConnectCompon
 
   return (
     <>
-      <div className="candy-order candy-card-border" onClick={onClick}>
+      <div className="candy-order candy-card-border">
         {isUserListing && <div className="candy-status-tag">Your Listing</div>}
-        <LiqImage
-          alt={order?.name}
-          src={order?.nftImageLink}
-          fit="cover"
-          style={{ borderTopRightRadius: 14, borderTopLeftRadius: 14 }}
-        />
+        <div className="nft-div" onClick={onClick}>
+          <LiqImage
+              alt={order?.name}
+              src={order?.nftImageLink}
+              fit="cover"
+              style={{ borderTopRightRadius: 14, borderTopLeftRadius: 14 }}
+          />
+        </div>
         <div className="candy-order-info">
           <div className="candy-order-name candy-line-limit-1">
             {`${order?.name}${order?.edition !== 0 ? ` #${order?.edition}` : ''}`}
           </div>
           <div className="candy-order-ticker candy-line-limit-1">{order?.ticker}</div>
           <div className="candy-order-price candy-line-limit-1">
-            {orderPrice ? `${orderPrice} ${exchangeInfo.symbol}` : 'N/A'}
+            <img src={process.env.PUBLIC_URL + "/solana-sol-logo.png"} width="20px" height="20px"/>{orderPrice ? `${orderPrice} ${exchangeInfo.symbol}` : 'N/A'}
           </div>
         </div>
       </div>

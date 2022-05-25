@@ -1,28 +1,27 @@
 .candy-nft-card {
-  position: relative;
-  height: auto;
-  z-index: 3;
+    position: relative;
+    height: auto;
+    z-index: 3;
 }
 .candy-nft-info {
-  color: black;
-  vertical-align: middle;
-  padding: 12px;
-  background-color: #fff;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+    color: white;
+    vertical-align: middle;
+    padding: 12px;
+    background-color: #120c18;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 .candy-nft-info .name {
-  font-weight: bold;
-  font-size: 16px;
-  text-align: left;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .candy-nft-info .ticker {
-  font-size: 14px;
-  text-align: left;
-  font-weight: 400;
-  height: 22px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    height: 22px;
 }
-/*# sourceMappingURL=index.css.map */

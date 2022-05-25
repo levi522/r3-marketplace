@@ -10,7 +10,7 @@ import { CandyShop } from '@liqnft/candy-shop-sdk';
 import { useValidateStatus } from '../../hooks/useValidateStatus';
 import { useUpdateCandyShopContext } from '../../public/Context';
 import { CollectionFilter, ShopFilter, OrderDefaultFilter } from '../../model';
-import './index.less';
+import './index.css';
 
 interface OrdersProps {
   walletConnectComponent: React.ReactElement;
@@ -81,11 +81,14 @@ export const Orders: React.FC<OrdersProps> = ({
         }
         setStartIndex((startIndex) => startIndex + limit);
         setOrders((existingOrders) => [...existingOrders, ...data.result]);
+        console.log("orders:",orders)
       })
       .catch((err) => {
         console.info('fetchOrdersByStoreId failed: ', err);
       });
   };
+
+
 
   useEffect(() => {
     if (!loadingMountRef.current) {
@@ -109,6 +112,7 @@ export const Orders: React.FC<OrdersProps> = ({
         setHasNextPage(haveNextPage);
         setStartIndex(() => 0 + ORDER_FETCH_LIMIT);
         setOrders(data.result);
+        console.log(data.result);
       })
       .catch((err) => {
         console.log('fetchOrdersByStoreId failed: ', err);

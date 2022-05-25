@@ -16,7 +16,7 @@ import { handleError, ErrorType, ErrorMsgMap } from '../../utils/ErrorHandler';
 import { notification, NotificationType } from '../../utils/rc-notification';
 import { TIMEOUT_EXTRA_LOADING } from '../../constant';
 
-import './style.less';
+import './style.css';
 
 export interface BuyModalProps {
   order: OrderSchema;

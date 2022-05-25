@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import './index.less';
+import './index.css';
 
 export interface ModalProps {
   children: any;

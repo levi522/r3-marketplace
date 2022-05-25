@@ -8,7 +8,7 @@ import { SellModal } from '../SellModal';
 import { SingleTokenInfo, CandyShop } from '@liqnft/candy-shop-sdk';
 import { Order as OrderSchema, CandyShop as CandyShopResponse } from '@liqnft/candy-shop-types';
 
-import './index.less';
+import './index.css';
 import { getExchangeInfo } from '../../utils/getExchangeInfo';
 
 export interface NftProps {
@@ -40,16 +40,17 @@ export const Nft = ({ nft, wallet, sellDetail, shop, candyShop }: NftProps): JSX
 
   return (
     <>
-      <div className="candy-card-border candy-nft-card" onClick={onClick}>
+      <div className="candy-card-border candy-nft-card">
         {isSellItem && <div className="candy-status-tag">Listed for Sale</div>}
+        <div onClick={onClick}>
+          <LiqImage
+              src={nft?.nftImage}
+              alt={nft?.metadata?.data?.name}
+              fit="cover"
+              style={{ borderTopRightRadius: 14, borderTopLeftRadius: 14 }}
 
-        <LiqImage
-          src={nft?.nftImage}
-          alt={nft?.metadata?.data?.name}
-          fit="cover"
-          style={{ borderTopRightRadius: 14, borderTopLeftRadius: 14 }}
-        />
-
+          />
+        </div>
         <div className="candy-nft-info">
           <div className="name">{nft?.metadata?.data?.name}</div>
           <div className="ticker">{nft?.metadata?.data?.symbol}</div>

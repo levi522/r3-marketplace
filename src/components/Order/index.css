@@ -1,30 +1,30 @@
 .candy-order {
-  height: 100%;
-  background-color: white;
-  position: relative;
+    height: 100%;
+    background-color: #120c18;
+    position: relative;
 }
 .candy-order .candy-order-info {
-  padding: 12px;
-  text-align: left;
+    padding: 12px;
+    text-align: left;
+    color: white;
 }
 .candy-order .candy-order-name {
-  color: #000;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: bold;
+    color: white;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
 }
 .candy-order .candy-order-ticker {
-  color: #757575;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 20px;
-  min-height: 20px;
+    color: #757575;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    min-height: 20px;
 }
 .candy-order .candy-order-price {
-  color: #000;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
-  margin-top: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 6px;
 }
-/*# sourceMappingURL=index.css.map */

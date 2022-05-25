@@ -1,58 +1,56 @@
 .candy-dropdown {
-  padding: 12px;
-  border: 2px solid #000;
-  width: 184px;
-  border-radius: 4px;
-  position: relative;
-  background-color: #fff;
+    padding: 12px;
+    border: 2px solid #000;
+    width: 184px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fff;
 }
 .candy-dropdown:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 .candy-dropdown-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .candy-dropdown-flex-placeholder {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 .candy-dropdown-icon {
-  pointer-events: none;
-  margin-left: 4px;
+    pointer-events: none;
+    margin-left: 4px;
 }
 .candy-dropdown-menu {
-  width: 100%;
-  color: black;
-  background-color: #fff;
-  margin-top: 8px;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  z-index: 99;
-  border: 2px solid #000;
-  border-radius: 4px;
+    width: 100%;
+    color: black;
+    background-color: #fff;
+    margin-top: 8px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 99;
+    border: 2px solid #000;
+    border-radius: 4px;
 }
 .candy-dropdown-menu .menu-middle-item {
-  padding: 12px;
-  border-bottom: 2px solid #000;
-  text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #000;
+    text-align: left;
 }
 .candy-dropdown-menu .menu-last-item {
-  padding: 12px;
-  text-align: left;
+    padding: 12px;
+    text-align: left;
 }
-.candy-dropdown-menu .menu-middle-item:hover,
-.candy-dropdown-menu .menu-last-item:hover {
-  background-color: #f4edfe;
+.candy-dropdown-menu .menu-middle-item:hover, .candy-dropdown-menu .menu-last-item:hover {
+    background-color: #f4edfe;
 }
 .candy-dropdown-label {
-  margin: 0;
+    margin: 0;
 }
 .candy-dropdown-label--purple {
-  color: #7522f5;
+    color: #7522f5;
 }
 .candy-dropdown-label--black {
-  color: #000;
+    color: #000;
 }
-/*# sourceMappingURL=index.css.map */

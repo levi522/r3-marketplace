@@ -47,6 +47,7 @@ export const Sell: React.FC<SellProps> = ({ wallet, walletConnectComponent, styl
   const [orderLoading, setOrderLoading] = useState<LoadStatus>(LoadStatus.ToLoad);
   const [shopLoading, setShopLoading] = useState<LoadStatus>(LoadStatus.ToLoad);
   const [shop, setShop] = useState<CandyShopResponse>();
+  const [sellOrderNumber, setSellOrderNumber] = useState<Number>(0);
 
   // global array for concat batches.
   const allNFTs = useRef<any>({});
@@ -99,6 +100,7 @@ export const Sell: React.FC<SellProps> = ({ wallet, walletConnectComponent, styl
     // const userNFTs = allNFTs.current.concat(batchNFTs);
     // allNFTs.current = userNFTs;
     setNfts(Object.values(allNFTs.current));
+    console.log("allNFTs: " , Object.values(allNFTs.current))
   }, []);
 
   const progressiveLoadUserNFTs = useCallback(
@@ -162,6 +164,43 @@ export const Sell: React.FC<SellProps> = ({ wallet, walletConnectComponent, styl
         setOrderLoading(LoadStatus.Loaded);
       });
   }, [candyShop, walletPublicKey, sellUpdateStatus]);
+
+  // const referCollections = useCallback(
+  //     async () => {
+  //       const timer = window.setInterval(async () => {
+  //         let sellNumberCount = 0
+  //         nfts.map((item) =>(
+  //             hashSellOrders[item.tokenMintAddress] ? sellNumberCount ++ : 0
+  //         ))
+  //         if(sellOrderNumber === sellNumberCount){
+  //           console.log("在这")
+  //           console.log(sellOrderNumber+"======"+sellNumberCount)
+  //         }else{
+  //           console.log("进入进入")
+  //           console.log(sellOrderNumber+"======"+sellNumberCount)
+  //           setSellOrderNumber(sellNumberCount)
+  //           if (loadingNFTStatus === LoadStatus.ToLoad) {
+  //             allNFTs.current = [];
+  //             firstBatchNFTLoaded.current = false;
+  //             setNFTLoadingStatus(LoadStatus.Loading);
+  //             progressiveLoadUserNFTs(walletPublicKey)
+  //                 .then((allUserNFTs: SingleTokenInfo[]) => {
+  //                   console.log(`${Logger}: getUserNFTs success, total amount of user NFTs= ${allUserNFTs.length}`);
+  //                 })
+  //                 .catch((error: any) => {
+  //                   console.log(`${Logger}: getUserNFTs failed, error=`, error);
+  //                 })
+  //                 .finally(() => {
+  //                   setNFTLoadingStatus(LoadStatus.Loaded);
+  //                 });
+  //           }
+  //         }
+  //       }, 1000 * 2);
+  //       return () => {
+  //         clearInterval(timer);
+  //       };
+  //     },[]
+  // )
 
   const hashSellOrders: any = useMemo(() => {
     return (

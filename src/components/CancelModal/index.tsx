@@ -9,7 +9,7 @@ import { Order as OrderSchema } from '@liqnft/candy-shop-types';
 import { CancelModalConfirm } from './CancelModalConfirm';
 import { CancelModalDetail } from './CancelModalDetail';
 
-import './index.less';
+import './index.css';
 
 export interface CancelModalProps {
   order: OrderSchema;

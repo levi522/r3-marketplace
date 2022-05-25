@@ -1,80 +1,79 @@
 .candy-activity {
-  padding: 20px 50px;
-  font-size: 16px;
+    padding: 20px 50px;
+    font-size: 16px;
 }
-@media only screen and (max-width: 1024px) {
-  .candy-activity {
-    padding: 20px 15px;
-  }
+@media only screen and (max-width: 1024px){
+    .candy-activity {
+        padding: 20px 15px;
+    }
 }
 .candy-activity .infinite-scroll-component {
-  overflow: unset !important;
+    overflow: unset !important;
 }
 .candy-activity .candy-activity-item {
-  display: grid;
-  text-align: left;
-  align-items: center;
-  grid-template-columns: minmax(250px, 1fr) 150px 350px 350px 200px;
+    display: grid;
+    text-align: left;
+    align-items: center;
+    grid-template-columns: minmax(250px,1fr) 150px 350px 350px 200px;
 }
 .candy-activity .candy-activity-item > * {
-  padding: 8px 12px;
-  border-bottom: 1px solid #e5e5e5;
-  min-height: 67px;
-  display: flex;
-  align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 67px;
+    display: flex;
+    align-items: center;
 }
-@media only screen and (max-width: 1600px) {
-  .candy-activity .candy-activity-item {
-    grid-template-columns: minmax(250px, 1fr) 150px 200px 200px 150px;
-  }
+@media only screen and (max-width: 1600px){
+    .candy-activity .candy-activity-item {
+        grid-template-columns: minmax(250px,1fr) 150px 200px 200px 150px;
+    }
 }
 .candy-activity .candy-activity-item img {
-  width: 50px;
-  height: 50px;
-  background-color: #e5e5e5;
-  object-fit: cover;
-  margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e5e5e5;
+    object-fit: cover;
+    margin-right: 20px;
 }
 .candy-activity .candy-activity-header span {
-  border-bottom: 2px solid #757575;
-  font-size: 14px;
-  color: #757575;
-  font-weight: 700;
-  text-align: left;
-  min-height: unset;
+    border-bottom: 2px solid #757575;
+    font-size: 14px;
+    color: #757575;
+    font-weight: 700;
+    text-align: left;
+    min-height: unset;
 }
 .candy-activity .candy-activity-table-container {
-  overflow: auto;
+    overflow: auto;
 }
 .candy-activity .candy-activity-table-container .candy-activity-name {
-  min-width: 230px;
-  display: flex;
-  align-items: center;
+    min-width: 230px;
+    display: flex;
+    align-items: center;
 }
 .candy-activity .candy-activity-table-container .candy-activity-name span {
-  font-weight: 700;
+    font-weight: 700;
 }
 .candy-activity .candy-activity-table-container .candy-activity-price {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 .candy-activity .candy-activity-table-container .candy-activity-time {
-  min-width: 160px;
+    min-width: 160px;
 }
 .candy-activity .candy-activity-table-container .candy-activity-time .candy-activity-time-content {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 .candy-activity .candy-activity-table-container .candy-activity-time .candy-activity-time-content .candy-activity-time-content-link {
-  display: inline-flex;
+    display: inline-flex;
 }
 .candy-activity .candy-activity-table-container .candy-activity-time .candy-activity-time-content svg {
-  margin-left: 8px;
+    margin-left: 8px;
 }
 .candy-activity .candy-activity-table-container .candy-activity-time .candy-activity-time-content .candy-activity-icon {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 .candy-activity .candy-processing {
-  margin: 60px auto;
+    margin: 60px auto;
 }
-/*# sourceMappingURL=style.css.map */

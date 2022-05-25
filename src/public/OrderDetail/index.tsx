@@ -13,7 +13,7 @@ import { Nft, Order as OrderSchema } from '@liqnft/candy-shop-types';
 import { TransactionState } from '../../model';
 
 import { CandyShop } from '@liqnft/candy-shop-sdk';
-import './style.less';
+import './style.css';
 import { getExchangeInfo } from '../../utils/getExchangeInfo';
 import { getPrice } from '../../utils/getPrice';
 

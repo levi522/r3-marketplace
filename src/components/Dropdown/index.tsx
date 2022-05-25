@@ -3,7 +3,7 @@ import { useClickOutside } from '../../hooks/useClickOutside';
 
 import IconChevronDown from '../../assets/IconChevronDown';
 import IconChevronUp from '../../assets/IconChevronUp';
-import './index.less';
+import './index.css';
 
 type DropdownItem = {
   value: any;

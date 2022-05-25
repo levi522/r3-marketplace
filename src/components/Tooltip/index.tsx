@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './style.less';
+import './style.css';
 
 export interface TooltipProps {
   children: any;
